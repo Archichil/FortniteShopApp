@@ -24,7 +24,7 @@ struct ShopItem: Decodable {
     let displayName: String
     let displayDescription: String
     let displayType: String
-    let displayAssets: DisplayAssets
+    let displayAssets: [DisplayAssets]
     let price: Price
     let rarity: Rarity
 }
