@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct FortniteShopAppApp: App {
+struct FortniteShopApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

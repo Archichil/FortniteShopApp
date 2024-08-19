@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7A648C52C6E552A0012DDC4 /* FortniteShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648C42C6E552A0012DDC4 /* FortniteShopAppApp.swift */; };
+		A7A648C52C6E552A0012DDC4 /* FortniteShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648C42C6E552A0012DDC4 /* FortniteShopApp.swift */; };
 		A7A648C72C6E552A0012DDC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648C62C6E552A0012DDC4 /* ContentView.swift */; };
 		A7A648C92C6E552B0012DDC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A648C82C6E552B0012DDC4 /* Assets.xcassets */; };
 		A7A648CC2C6E552B0012DDC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A648CB2C6E552B0012DDC4 /* Preview Assets.xcassets */; };
 		A7A648D62C6E552B0012DDC4 /* FortniteShopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648D52C6E552B0012DDC4 /* FortniteShopAppTests.swift */; };
 		A7A648E02C6E552B0012DDC4 /* FortniteShopAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648DF2C6E552B0012DDC4 /* FortniteShopAppUITests.swift */; };
 		A7A648E22C6E552B0012DDC4 /* FortniteShopAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648E12C6E552B0012DDC4 /* FortniteShopAppUITestsLaunchTests.swift */; };
+		A7A648F22C6E5E010012DDC4 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648F12C6E5E010012DDC4 /* Shop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		A7A648C12C6E552A0012DDC4 /* FortniteShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortniteShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7A648C42C6E552A0012DDC4 /* FortniteShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteShopAppApp.swift; sourceTree = "<group>"; };
+		A7A648C42C6E552A0012DDC4 /* FortniteShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteShopApp.swift; sourceTree = "<group>"; };
 		A7A648C62C6E552A0012DDC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7A648C82C6E552B0012DDC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7A648CB2C6E552B0012DDC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		A7A648DB2C6E552B0012DDC4 /* FortniteShopAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortniteShopAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A648DF2C6E552B0012DDC4 /* FortniteShopAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteShopAppUITests.swift; sourceTree = "<group>"; };
 		A7A648E12C6E552B0012DDC4 /* FortniteShopAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteShopAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A7A648F12C6E5E010012DDC4 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,10 @@
 		A7A648C32C6E552A0012DDC4 /* FortniteShopApp */ = {
 			isa = PBXGroup;
 			children = (
-				A7A648C42C6E552A0012DDC4 /* FortniteShopAppApp.swift */,
+				A7A648F02C6E57040012DDC4 /* ViewModel */,
+				A7A648EF2C6E56FE0012DDC4 /* Model */,
+				A7A648EE2C6E56F40012DDC4 /* View */,
+				A7A648C42C6E552A0012DDC4 /* FortniteShopApp.swift */,
 				A7A648C62C6E552A0012DDC4 /* ContentView.swift */,
 				A7A648C82C6E552B0012DDC4 /* Assets.xcassets */,
 				A7A648CA2C6E552B0012DDC4 /* Preview Content */,
@@ -125,6 +130,28 @@
 				A7A648E12C6E552B0012DDC4 /* FortniteShopAppUITestsLaunchTests.swift */,
 			);
 			path = FortniteShopAppUITests;
+			sourceTree = "<group>";
+		};
+		A7A648EE2C6E56F40012DDC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7A648EF2C6E56FE0012DDC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7A648F12C6E5E010012DDC4 /* Shop.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7A648F02C6E57040012DDC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A648F22C6E5E010012DDC4 /* Shop.swift in Sources */,
 				A7A648C72C6E552A0012DDC4 /* ContentView.swift in Sources */,
-				A7A648C52C6E552A0012DDC4 /* FortniteShopAppApp.swift in Sources */,
+				A7A648C52C6E552A0012DDC4 /* FortniteShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -430,6 +458,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +488,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,7 +511,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38UL77W743;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuhockovolec.FortniteShopAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,7 +531,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38UL77W743;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuhockovolec.FortniteShopAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
