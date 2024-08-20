@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A7A5D0C52C73C7260022A04C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5D0C42C73C7260022A04C /* Item.swift */; };
+		A7A5D0C72C73E5B10022A04C /* ShopItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5D0C62C73E5B10022A04C /* ShopItemView.swift */; };
+		A7A5D0C92C7413640022A04C /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5D0C82C7413640022A04C /* ShopView.swift */; };
+		A7A5D0CB2C7413B10022A04C /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5D0CA2C7413B10022A04C /* ShopViewModel.swift */; };
+		A7A5D0CE2C7417CA0022A04C /* SortedShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5D0CD2C7417CA0022A04C /* SortedShop.swift */; };
 		A7A648C52C6E552A0012DDC4 /* FortniteShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648C42C6E552A0012DDC4 /* FortniteShopApp.swift */; };
 		A7A648C72C6E552A0012DDC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648C62C6E552A0012DDC4 /* ContentView.swift */; };
 		A7A648C92C6E552B0012DDC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A648C82C6E552B0012DDC4 /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		A7A5D0C42C73C7260022A04C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A7A5D0C62C73E5B10022A04C /* ShopItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemView.swift; sourceTree = "<group>"; };
+		A7A5D0C82C7413640022A04C /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		A7A5D0CA2C7413B10022A04C /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		A7A5D0CD2C7417CA0022A04C /* SortedShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedShop.swift; sourceTree = "<group>"; };
 		A7A648C12C6E552A0012DDC4 /* FortniteShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortniteShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A648C42C6E552A0012DDC4 /* FortniteShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteShopApp.swift; sourceTree = "<group>"; };
 		A7A648C62C6E552A0012DDC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +83,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7A5D0CC2C7415010022A04C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		A7A648B82C6E552A0012DDC4 = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +113,11 @@
 		A7A648C32C6E552A0012DDC4 /* FortniteShopApp */ = {
 			isa = PBXGroup;
 			children = (
+				A7A5D0CC2C7415010022A04C /* Services */,
 				A7A648F02C6E57040012DDC4 /* ViewModel */,
 				A7A648EF2C6E56FE0012DDC4 /* Model */,
 				A7A648EE2C6E56F40012DDC4 /* View */,
 				A7A648C42C6E552A0012DDC4 /* FortniteShopApp.swift */,
-				A7A648C62C6E552A0012DDC4 /* ContentView.swift */,
 				A7A648C82C6E552B0012DDC4 /* Assets.xcassets */,
 				A7A648CA2C6E552B0012DDC4 /* Preview Content */,
 			);
@@ -137,6 +152,9 @@
 		A7A648EE2C6E56F40012DDC4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7A648C62C6E552A0012DDC4 /* ContentView.swift */,
+				A7A5D0C62C73E5B10022A04C /* ShopItemView.swift */,
+				A7A5D0C82C7413640022A04C /* ShopView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +164,7 @@
 			children = (
 				A7A648F12C6E5E010012DDC4 /* Shop.swift */,
 				A7A5D0C42C73C7260022A04C /* Item.swift */,
+				A7A5D0CD2C7417CA0022A04C /* SortedShop.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +172,7 @@
 		A7A648F02C6E57040012DDC4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A7A5D0CA2C7413B10022A04C /* ShopViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -287,10 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A5D0C92C7413640022A04C /* ShopView.swift in Sources */,
 				A7A5D0C52C73C7260022A04C /* Item.swift in Sources */,
+				A7A5D0C72C73E5B10022A04C /* ShopItemView.swift in Sources */,
 				A7A648F22C6E5E010012DDC4 /* Shop.swift in Sources */,
 				A7A648C72C6E552A0012DDC4 /* ContentView.swift in Sources */,
 				A7A648C52C6E552A0012DDC4 /* FortniteShopApp.swift in Sources */,
+				A7A5D0CE2C7417CA0022A04C /* SortedShop.swift in Sources */,
+				A7A5D0CB2C7413B10022A04C /* ShopViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +481,8 @@
 				DEVELOPMENT_TEAM = 38UL77W743;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Shop";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -487,6 +513,8 @@
 				DEVELOPMENT_TEAM = 38UL77W743;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Shop";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
