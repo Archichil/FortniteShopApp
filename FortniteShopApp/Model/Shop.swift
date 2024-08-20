@@ -27,6 +27,7 @@ struct ShopItem: Decodable {
     let displayAssets: [DisplayAssets]
     let price: Price
     let rarity: Rarity
+    let section: ItemSection
 }
 
 struct DisplayAssets: Decodable {
@@ -46,4 +47,8 @@ struct Price: Decodable {
 
 struct Rarity: Decodable {
     let id, name: String
+}
+
+struct ItemSection: Decodable {
+    let name: String
 }
