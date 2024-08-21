@@ -36,10 +36,17 @@ struct ShopItemView: View {
                                 .resizable()
                                 .frame(width: 18, height: 18)
                             
-                            Text(String(item.price.regularPrice))
-                                .foregroundColor(.white)
+                            Text(String(item.price.finalPrice))
+                                .foregroundStyle(.white)
                                 .font(.title3)
                                 .bold()
+                            
+                            if item.price.finalPrice < item.price.regularPrice {
+                                Text(String(item.price.regularPrice))
+                                    .foregroundStyle(.white.opacity(0.9))
+                                    .font(.callout)
+                                    .strikethrough(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, color: .red)
+                            }
                         }
                     }
                     Spacer()
