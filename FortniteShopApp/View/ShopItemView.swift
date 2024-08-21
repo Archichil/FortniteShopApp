@@ -68,7 +68,7 @@ struct ShopItemView: View {
 #Preview {
     ShopItemView(item: ShopItem(
         mainId: "Pickaxe_ID_728_OrbitTealMale_3NIST",
-        devName: "example",
+        offerId: "example",
         displayName: "Gaffi Stick",
         displayDescription: "Used by the Tusken Raiders on Tatooine, a planet Boba has spent much time on.",
         displayType: "Pickaxes", 

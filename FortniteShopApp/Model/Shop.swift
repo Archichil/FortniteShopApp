@@ -28,7 +28,7 @@ struct LastUpdate: Decodable {
 
 struct ShopItem: Decodable {
     let mainId: String
-    let devName: String
+    let offerId: String
     let displayName: String
     let displayDescription: String
     let displayType: String

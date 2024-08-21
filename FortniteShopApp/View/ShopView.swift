@@ -13,22 +13,25 @@ struct ShopView: View {
     
     var body: some View {
 //        VStack {}
-        ScrollView {
-            ForEach(viewModel.sortedShop.sections) { section in
-                Section(header: 
-                            Text(section.sectionName)
-                                .font(.title2)
-                                .bold()) {
-                    let columns = [GridItem(.flexible()), GridItem(.flexible())]
-                    
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(section.items, id: \.devName) { item in
-                            ShopItemView(item: item)
+        NavigationStack {
+            ScrollView {
+                ForEach(viewModel.sortedShop.sections) { section in
+                    Section(header: 
+                                Text(section.sectionName)
+                                    .font(.title2)
+                                    .bold()) {
+                        let columns = [GridItem(.flexible()), GridItem(.flexible())]
+                        
+                        LazyVGrid(columns: columns, spacing: 20) {
+                            ForEach(section.items, id: \.offerId) { item in
+                                ShopItemView(item: item)
+                            }
                         }
                     }
+                    .padding(.top)
                 }
-                .padding(.top)
             }
+            .navigationTitle("Daily Shop")
         }
     }
 }
