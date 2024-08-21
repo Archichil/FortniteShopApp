@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ShopItemView: View {
     
@@ -13,22 +14,13 @@ struct ShopItemView: View {
     
     var body: some View {
         ZStack {
-            AsyncImage(url: URL(string: item.displayAssets.first?.background ?? "")!) { phase in
-                if let image = phase.image {
-                    image
-                        .resizable()
-                        .scaledToFill()
-                } else if phase.error != nil {
-                    Image(systemName: "questionmark")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 50, height: 50)
-                } else {
+            KFImage.url(URL(string: item.displayAssets.first?.background ?? ""))
+                .placeholder {
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: .white))
-
                 }
-            }
+                .resizable()
+                .scaledToFill()
             VStack {
                 Spacer()
                 
@@ -57,7 +49,7 @@ struct ShopItemView: View {
                 .cornerRadius(10)
             }
         }
-        .frame(width: 150, height: 150, alignment: .center)
+        .frame(width: 175, height: 175, alignment: .center)
         .background(Color.gray.opacity(0.7))
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .shadow(radius: 10)
@@ -69,6 +61,7 @@ struct ShopItemView: View {
 #Preview {
     ShopItemView(item: ShopItem(
         mainId: "Pickaxe_ID_728_OrbitTealMale_3NIST",
+        devName: "example",
         displayName: "Gaffi Stick",
         displayDescription: "Used by the Tusken Raiders on Tatooine, a planet Boba has spent much time on.",
         displayType: "Pickaxes", 

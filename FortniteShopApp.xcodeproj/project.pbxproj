@@ -20,6 +20,10 @@
 		A7A648E02C6E552B0012DDC4 /* FortniteShopAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648DF2C6E552B0012DDC4 /* FortniteShopAppUITests.swift */; };
 		A7A648E22C6E552B0012DDC4 /* FortniteShopAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648E12C6E552B0012DDC4 /* FortniteShopAppUITestsLaunchTests.swift */; };
 		A7A648F22C6E5E010012DDC4 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A648F12C6E5E010012DDC4 /* Shop.swift */; };
+		A7B5AA312C756475001BBEAB /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5AA302C756475001BBEAB /* ApiKeys.swift */; };
+		A7B5AA332C756AC2001BBEAB /* ApiKeysExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5AA322C756AC2001BBEAB /* ApiKeysExample.swift */; };
+		A7B5AA372C7589B6001BBEAB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A7B5AA362C7589B6001BBEAB /* Kingfisher */; };
+		A7B5AA392C75909C001BBEAB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A7B5AA382C75909C001BBEAB /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,9 @@
 		A7A648DF2C6E552B0012DDC4 /* FortniteShopAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteShopAppUITests.swift; sourceTree = "<group>"; };
 		A7A648E12C6E552B0012DDC4 /* FortniteShopAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteShopAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A7A648F12C6E5E010012DDC4 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		A7B5AA302C756475001BBEAB /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		A7B5AA322C756AC2001BBEAB /* ApiKeysExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeysExample.swift; sourceTree = "<group>"; };
+		A7B5AA382C75909C001BBEAB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7B5AA372C7589B6001BBEAB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,16 +91,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A7A5D0CC2C7415010022A04C /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		A7A648B82C6E552A0012DDC4 = {
 			isa = PBXGroup;
 			children = (
+				A7B5AA382C75909C001BBEAB /* .gitignore */,
 				A7A648C32C6E552A0012DDC4 /* FortniteShopApp */,
 				A7A648D42C6E552B0012DDC4 /* FortniteShopAppTests */,
 				A7A648DE2C6E552B0012DDC4 /* FortniteShopAppUITests */,
@@ -113,7 +115,7 @@
 		A7A648C32C6E552A0012DDC4 /* FortniteShopApp */ = {
 			isa = PBXGroup;
 			children = (
-				A7A5D0CC2C7415010022A04C /* Services */,
+				A7B5AA2F2C756451001BBEAB /* Environment */,
 				A7A648F02C6E57040012DDC4 /* ViewModel */,
 				A7A648EF2C6E56FE0012DDC4 /* Model */,
 				A7A648EE2C6E56F40012DDC4 /* View */,
@@ -177,6 +179,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		A7B5AA2F2C756451001BBEAB /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				A7B5AA302C756475001BBEAB /* ApiKeys.swift */,
+				A7B5AA322C756AC2001BBEAB /* ApiKeysExample.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,6 +204,9 @@
 			dependencies = (
 			);
 			name = FortniteShopApp;
+			packageProductDependencies = (
+				A7B5AA362C7589B6001BBEAB /* Kingfisher */,
+			);
 			productName = FortniteShopApp;
 			productReference = A7A648C12C6E552A0012DDC4 /* FortniteShopApp.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +279,9 @@
 				Base,
 			);
 			mainGroup = A7A648B82C6E552A0012DDC4;
+			packageReferences = (
+				A7B5AA352C7589B6001BBEAB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A7A648C22C6E552A0012DDC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7B5AA392C75909C001BBEAB /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,12 +327,14 @@
 			files = (
 				A7A5D0C92C7413640022A04C /* ShopView.swift in Sources */,
 				A7A5D0C52C73C7260022A04C /* Item.swift in Sources */,
+				A7B5AA312C756475001BBEAB /* ApiKeys.swift in Sources */,
 				A7A5D0C72C73E5B10022A04C /* ShopItemView.swift in Sources */,
 				A7A648F22C6E5E010012DDC4 /* Shop.swift in Sources */,
 				A7A648C72C6E552A0012DDC4 /* ContentView.swift in Sources */,
 				A7A648C52C6E552A0012DDC4 /* FortniteShopApp.swift in Sources */,
 				A7A5D0CE2C7417CA0022A04C /* SortedShop.swift in Sources */,
 				A7A5D0CB2C7413B10022A04C /* ShopViewModel.swift in Sources */,
+				A7B5AA332C756AC2001BBEAB /* ApiKeysExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +670,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7B5AA352C7589B6001BBEAB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7B5AA362C7589B6001BBEAB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7B5AA352C7589B6001BBEAB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A7A648B92C6E552A0012DDC4 /* Project object */;
 }
