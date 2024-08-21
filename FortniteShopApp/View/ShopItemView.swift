@@ -45,7 +45,7 @@ struct ShopItemView: View {
                                 Text(String(item.price.regularPrice))
                                     .foregroundStyle(.white.opacity(0.9))
                                     .font(.callout)
-                                    .strikethrough(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, color: .red)
+                                    .strikethrough(true, color: .red)
                             }
                         }
                     }
