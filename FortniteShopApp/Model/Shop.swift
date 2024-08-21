@@ -28,7 +28,7 @@ struct LastUpdate: Decodable {
 
 struct ShopItem: Decodable {
     let mainId: String
-    let devName: String
+    let offerId: String
     let displayName: String
     let displayDescription: String
     let displayType: String
@@ -65,12 +65,12 @@ struct ItemSection: Decodable {
 extension Shop {
     func toSortedShop() -> SortedShop {
         let groupedItems = Dictionary(grouping: shop) { $0.section.name }
-        let sortedSections = groupedItems.map { (sectionName, items) in
+        var sortedSections = groupedItems.map { (sectionName, items) in
             SortedSection(sectionName: sectionName, items: items)
         }
         
         // Sort sections if necessary
-        // sortedSections = sortedSections.sorted { $0.sectionName < $1.sectionName }
+        sortedSections = sortedSections.sorted { $0.sectionName < $1.sectionName }
         return SortedShop(sections: sortedSections)
     }
 }
