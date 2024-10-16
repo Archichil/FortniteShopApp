@@ -14,7 +14,7 @@ struct ShopItemView: View {
     
     var body: some View {
         ZStack {
-            KFImage.url(URL(string: item.displayAssets.first?.background ?? ""))
+            KFImage.url(URL(string: (item.displayAssets.first?.background ?? item.displayAssets.first?.url) ?? ""))
                 .placeholder {
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: .white))
@@ -52,7 +52,7 @@ struct ShopItemView: View {
                     Spacer()
                 }
                 .padding(.all, 10)
-                .background(Color.black.opacity(0.15))
+                .background(Color.black.opacity(0.45))
                 .cornerRadius(10)
             }
         }

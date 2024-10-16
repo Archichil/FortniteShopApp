@@ -40,8 +40,8 @@ struct ShopItem: Decodable {
 
 struct DisplayAssets: Decodable {
     let url: String
-    let background: String
-    let fullBackground: String
+    let background: String?
+    let fullBackground: String?
     
     enum CodingKeys: String, CodingKey {
         case url, background
